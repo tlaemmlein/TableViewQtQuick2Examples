@@ -2,3 +2,5 @@
 /build-02-TableView-ColumnWidth-Headings-Qt_5_14_2_MSVC2017_64bit-Release/
 /01-TableView-Simple-Different-Cols/CMakeLists.txt.user
 /02-TableView-ColumnWidth-Headings/CMakeLists.txt.user
+/build-03-TableView-Columns-Sortable-Qt_5_14_2_MSVC2017_64bit-Release/
+/03-TableView-Columns-Sortable/CMakeLists.txt.user
