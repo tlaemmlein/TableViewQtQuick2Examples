@@ -29,7 +29,7 @@ QVariant ProcessModel::data(const QModelIndex &index, int /*role*/) const
     fields field = fields(index.column());
     int pid = m_pids[index.row()];
     ProcInfo pi = m_proc.procs.value(pid);
-    return pi.toString(field);
+    return pi.toVariant(field);
 }
 
 QVariant ProcessModel::headerData(int section, Qt::Orientation orientation, int role) const
@@ -54,7 +54,7 @@ int ProcessModel::columnWidth(int c, const QFont *font)
         int ret = fm.horizontalAdvance(headerData(c, Qt::Horizontal).toString() + QLatin1String(" ^")) + 8;
         for (int r = 0; r < m_pids.count(); ++r) {
             ProcInfo pi = m_proc.procs.value(m_pids[r]);
-            ret = qMax(ret, fm.horizontalAdvance(pi.toString(fields(c))));
+            ret = qMax(ret, fm.horizontalAdvance(pi.toVariant(fields(c)).toString()));
         }
         m_columnWidths[c] = ret;
     }

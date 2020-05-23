@@ -44,13 +44,13 @@ ProcInfo::~ProcInfo()
 
 }
 
-QString ProcInfo::toString(fields f)
+QVariant ProcInfo::toVariant(fields f)
 {
     switch (f) {
-    case F_PID:  return QString("%1").arg(mpid);
-    case F_PPID:  return QString("%1").arg(ppid);
-    case F_PGID:  return QString("%1").arg(pgid);
-    case F_SID:  return QString("%1").arg(sid);
+    case F_PID:  return mpid;
+    case F_PPID:  return ppid;
+    case F_PGID:  return pgid;
+    case F_SID:  return sid;
     case F_STAT1:  return stat1;
     case F_STAT2:  return stat2;
     case F_STAT3:  return stat3;
@@ -60,6 +60,7 @@ QString ProcInfo::toString(fields f)
     default: return "";
     }
 }
+
 
 
 Proc::Proc()

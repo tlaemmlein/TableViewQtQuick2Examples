@@ -2,6 +2,7 @@
 #define PROC_H
 
 #include <QMap>
+#include <QVariant>
 #include <QVector>
 
 
@@ -39,7 +40,7 @@ public:
     QString cmd;
     QString cmdline;
 
-    QString toString(fields f);
+    QVariant toVariant(fields f);
 };
 
 using ProcList = QMap<int, ProcInfo>;
