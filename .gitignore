@@ -4,3 +4,5 @@
 /02-TableView-ColumnWidth-Headings/CMakeLists.txt.user
 /build-03-TableView-Columns-Sortable-Qt_5_14_2_MSVC2017_64bit-Release/
 /03-TableView-Columns-Sortable/CMakeLists.txt.user
+/build-04-TableView-Sort-Init-Filter-Qt_5_14_2_MSVC2017_64bit-Release/
+/04-TableView-Sort-Init-Filter/CMakeLists.txt.user

@@ -19,3 +19,5 @@ So here are the transferred examples:
 * 02-TableView-ColumnWidth-Headings (-> https://youtu.be/-GOfY1kEP2A?t=640 and commit 6a7d765)
 
 * 03-TableView-Columns-Sortable (-> https://youtu.be/-GOfY1kEP2A?t=889 and commit 1ae40e6)
+
+* 04-TableView-Sort-Init-Filter (-> https://youtu.be/-GOfY1kEP2A?t=1155 and commit 3394948)
