@@ -17,7 +17,7 @@ SortFilterTableModel::SortFilterTableModel(QObject *parent)
              << F_STAT4
              << F_CMD
              << F_CMDLINE;
-    setFilterKeyColumn(F_CMDLINE);
+    setFilterKeyColumn(-1); //With -1: Include all columns to filter
 }
 
 void SortFilterTableModel::setFilterText(QString filterText)
