@@ -8,3 +8,5 @@
 /04-TableView-Sort-Init-Filter/CMakeLists.txt.user
 /build-05-TableView-DelegateChooser-Qt_5_14_2_MSVC2017_64bit-Release/
 /05-TableView-DelegateChooser/CMakeLists.txt.user
+/build-TableView-With-Headers-Qt_5_15_0_MSVC2017_64bit-Release/
+/TableView-With-Headers/CMakeLists.txt.user

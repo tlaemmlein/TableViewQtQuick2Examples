@@ -25,3 +25,14 @@ So here are the transferred examples:
 * 05-TableView-DelegateChooser (-> https://youtu.be/-GOfY1kEP2A?t=1226 and commit 56d5affe)
 
 
+## And what are the new features in Qt 5.15 for TableView?
+
+Here we have HorizontalHeaderView and VerticalHeaderView.
+
+Build the following examples with Qt 5.15 or higher.
+
+* TableView-With-Headers
+
+
+
+
