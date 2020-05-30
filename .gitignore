@@ -10,3 +10,6 @@
 /05-TableView-DelegateChooser/CMakeLists.txt.user
 /build-TableView-With-Headers-Qt_5_15_0_MSVC2017_64bit-Release/
 /TableView-With-Headers/CMakeLists.txt.user
+/build-06-TableView-Column-Resizable-Qt_5_15_0_MSVC2017_64bit-Debug/
+/build-06-TableView-Column-Resizable-Qt_5_15_0_MSVC2017_64bit-Release/
+/06-TableView-Column-Resizable/CMakeLists.txt.user
