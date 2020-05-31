@@ -9,6 +9,10 @@ Rectangle {
     signal sorting
     width: splitter.x + 6
 
+    function setWidth(newWidth) {
+        splitter.x = newWidth -6
+    }
+
     function stopSorting() {
         state = ""
     }
@@ -24,7 +28,7 @@ Rectangle {
     Text {
         id: upDownIndicator
         anchors.right: parent.right
-        anchors.margins: 4
+        anchors.margins: 8
         anchors.verticalCenter: parent.verticalCenter
         text: "^"
         visible: false
@@ -36,11 +40,33 @@ Rectangle {
         id: splitter
         x: root.initialWidth - 6
         width: 12
-        height: parent.height + 10
+        height: parent.height
         DragHandler {
             yAxis.enabled: false
-            onActiveChanged: if (!active) table.forceLayout()
+            onActiveChanged: {
+                if (!active) {
+                    if (splitter.x <= 5 ) {
+                      splitter.x = 6
+                    }
+                    table.forceLayout()
+                }
+            }
         }
+        Rectangle {
+            anchors.fill: parent
+            id: splitterRect
+            color: "grey"
+            visible: false
+        }
+
+
+        MouseArea {
+            hoverEnabled: true
+            anchors.fill: parent
+            onEntered: splitterRect.visible = true
+            onExited: splitterRect.visible = false
+        }
+
     }
 
 

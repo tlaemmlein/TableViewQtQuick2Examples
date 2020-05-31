@@ -32,6 +32,20 @@ ApplicationWindow {
             Label {
                 text: "sec"
             }
+            Button {
+                id: resizeCols
+                text: qsTr("Resize cols")
+                onClicked: {
+                    //console.log(table.model.columnCount())
+                    for ( var index = 0; index < table.model.columnCount(); ++index) {
+                        var width = Math.min(600, table.model.columnWidth(index))
+                        //console.log(index + " " + width)
+                        headerRepeater.itemAt(index).setWidth(width)
+                    }
+                    table.forceLayout()
+                }
+            }
+
             Item {
                 Layout.fillWidth: true
             }
