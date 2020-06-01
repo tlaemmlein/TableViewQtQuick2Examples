@@ -24,6 +24,8 @@ So here are the transferred examples:
 
 * 05-TableView-DelegateChooser (-> https://youtu.be/-GOfY1kEP2A?t=1226 and commit 56d5affe)
 
+* 06-TableView-Column-Resizable (-> https://youtu.be/-GOfY1kEP2A?t=1553 and commit 6bcfbdb70d)
+
 
 ## And what are the new features in Qt 5.15 for TableView?
 
